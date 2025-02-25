@@ -1,0 +1,165 @@
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Smooch Sans', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    overflow: hidden;
+    background-color: #f0e3c9;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* Logo Styles */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+header .logo span {
+    font-weight: bold;
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 1.8em;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Smooch Sans', sans-serif;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+nav ul li a:hover {
+    color: rgb(187, 15, 15);
+}
+
+.banner {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .banner img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+  }
+  
+  .banner-text {
+    position: absolute;
+    top: 80%; /* Position text in the middle vertically */
+    left: 50%; /* Position text in the middle horizontally */
+    transform: translate(-50%, -50%); /* Centre the text */
+    color: rgb(9, 9, 9);
+    font-size: 70px;
+    font-weight: bold;
+    
+  }
+
+/* Courses Container */
+.courses-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    padding: 0 10px;
+}
+
+.course-box {
+    width: 30%;
+    height: 450px; /* Long container */
+    padding: 15px;
+    background-color: #f8ded1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Text at the bottom */
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image Styling */
+.course-box img {
+    max-width: 300px;
+    height: 280px;
+    margin-bottom: auto; /* Push image to the top */
+}
+
+/* Text Styling */
+.course-box h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.course-box p {
+    color: #666;
+    font-size: 1em;
+    font-family: 'Ubuntu', sans-serif;
+
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.course-box button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.course-box button:hover {
+    background-color: #0056b3;
+}
+
+/* Hover effect */
+.course-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Coming Soon Styling */
+.coming-soon {
+    background-color: #e0e0e0;
+    color: #999;
+}
+
+.coming-soon h3 {
+    color: #888;
+}
+
+.coming-soon p {
+    color: #aaa;
+}

@@ -1,0 +1,171 @@
+/* General Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Smooch Sans', sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  overflow: hidden;
+  background-color: #f0e3c9;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+/* Logo Styles */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+header .logo span {
+  font-weight: bold;
+  font-family: 'Smooch Sans', sans-serif;
+  font-size: 1.8em;
+  color: #333;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: 'Smooch Sans', sans-serif;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.8em;
+}
+
+nav ul li a:hover {
+  color: rgb(187, 15, 15);
+}
+
+.banner {
+  position: relative;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.banner img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+.banner-text {
+  position: absolute;
+  top: 80%; /* Position text in the middle vertically */
+  left: 50%; /* Position text in the middle horizontally */
+  transform: translate(-50%, -50%); /* Centre the text */
+  color: rgb(9, 9, 9);
+  font-size: 70px;
+  font-weight: bold;
+  
+}
+  
+  .hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero-text h1 {
+    font-size: 3em;
+    margin: 0 0 10px;
+  }
+  
+  .hero-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  
+  .our-story {
+    background-color: white;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .our-story h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .our-story p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 30px;
+  }
+  
+  .our-story img {
+    width: 70%;
+    border-radius: 10px;
+  }
+  
+  .team {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .team h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+  }
+  
+  .team-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .team-member {
+    width: 200px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .team-member h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .team-member p {
+    font-size: 1em;
+    color: #666;
+  }
+  
+  footer {
+    background-color: #1d85e1;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }

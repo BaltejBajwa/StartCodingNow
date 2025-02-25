@@ -1,0 +1,161 @@
+/* General Styles */
+html {
+    scroll-behaviour: smooth;
+}
+
+body {
+    font-family: 'Smooch Sans', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    overflow: hidden; /* Ensure proper layout */
+    background-color: #f0e3c9; /* Light grey background */
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+/* Logo Styles */
+.logo {
+    display: flex;
+    align-items: center; /* Aligns the logo image and text vertically */
+}
+
+.logo img {
+    width: 40px; /* Adjust this to match the height of the text */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between the logo and the text */
+}
+header .logo span {
+    font-weight: bold;
+    font-size: 1.8em;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+nav ul li a:hover {
+    color: rgb(187, 15, 15);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-image: url('new.JPEG'); /* Add the path to your image */
+    background-size: cover; /* Ensure the image covers the section */
+    background-position: center; /* Center the background image */
+    height: 80vh; /* Full height of the viewport */
+}
+
+.hero .text-content {
+    position: absolute; /* Absolutely position the text */
+    top: 20px; /* Adjust the distance from the top of the screen */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to truly center the text */
+    color: rgb(187, 15, 15); /* Ensure text stands out */
+    text-align: center; /* Center the text */
+    z-index: 1; /* Make sure the text is above the background */
+}
+.hero h3 {
+    font-size: 30px;
+    margin-top: 40px;
+    color: #000000;
+}
+.hero h1 {
+    font-size: 80px;
+    margin-top: 180px;
+}
+
+
+
+.hero button {
+    font-size: 1.1em;
+    padding: 10px 30px;
+    margin-top: 150px;
+    background-color: rgb(187, 15, 15);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #e85a47;
+}
+
+
+
+.footer {
+    background-color: #f0e3c9;
+    color: #000000;
+    padding: 20px 0;
+    font-family: 'Smooch Sans', sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-container > div {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .footer-container h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .footer-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-container ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-container ul li a {
+    color: #050505;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-container ul li a:hover {
+    color: rgb(187, 15, 15);
+  }
+  
+  .social-media img {
+    width: 24px;
+    margin-right: 10px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #080808;
+    padding-top: 10px;
+    font-size: 0.9em;
+    color:rgb(187, 15, 15);
+  }
