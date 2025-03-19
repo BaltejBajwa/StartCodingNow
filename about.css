@@ -1,6 +1,6 @@
 /* General Styles */
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /* Smooth scrolling */
 }
 
 body {
@@ -8,17 +8,25 @@ body {
   background-color: #ffffff;
   margin: 0;
   padding: 0;
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 /* Header Styles */
 header {
   overflow: hidden;
-  background-color: #f0e3c9;
-  padding: 10px 30px;
+  background-color: #ffffff;
+  padding: 15px 5%; /* Use percentage padding for responsiveness */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 15px;
+  position: fixed; /* Makes the header sticky */
+  top: 20px; /* Positioned slightly lower to avoid browser menu bar */
+  left: 0;
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Include padding in width calculation */
+  z-index: 1000; /* Ensures it stays on top of other content */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: all 0.6s ease-in-out; /* Slower and smoother transition */
 }
 
 /* Logo Styles */
@@ -28,84 +36,102 @@ header {
 }
 
 .logo img {
-  width: 40px;
-  height: auto;
-  margin-right: 10px;
+  width: 40px; /* Adjust this to match the height of the text */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between the logo and the text */
+  transition: transform 0.6s ease-in-out; /* Slower and smoother hover effect */
+}
+
+.logo:hover img {
+  transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
 header .logo span {
   font-weight: bold;
-  font-family: 'Smooch Sans', sans-serif;
   font-size: 1.8em;
   color: #333;
+  transition: color 0.6s ease-in-out; /* Slower and smoother hover effect */
 }
 
+header .logo:hover span {
+  color: #85573b; /* Change color on hover */
+}
+
+/* Navigation Styles */
 nav ul {
   list-style: none;
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin: 0 15px; /* Reduced margin for better spacing */
 }
 
 nav ul li a {
   text-decoration: none;
-  font-family: 'Smooch Sans', sans-serif;
   color: #333;
   font-weight: bold;
   font-size: 1.8em;
+  padding: 5px 10px; /* Added padding for better click area */
+  transition: all 0.6s ease-in-out; /* Slower and smoother hover effects */
 }
 
 nav ul li a:hover {
-  color: rgb(187, 15, 15);
+  color: #85573b; /* Change color on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
 }
 
-.banner {
-  position: relative;
+/* Active Link Style */
+nav ul li a.active {
+  color: #85573b; /* Highlight active page */
+  border-bottom: 2px solid #85573b; /* Underline for active page */
+}
+
+/* Optional: Fade-In Animation for Header */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+header {
+  animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
+}
+
+  
+.hero {
+  margin-top: 100px;
+  border-top: 10px solid #85573b;
+  background-color: #ffffff;
+  color: rgb(12, 11, 11);
+  text-align:center;
+  padding: 30px 5px;
+}
+  
+.hero-text h1 {
+  font-size: 4em;
+  margin: 0 0 10px;
+}
+  
+.hero-text p {
+  font-size: 1.2em;
   margin-top: 10px;
-  width: 100%;
+  line-height: 1.6;
 }
+  
+.our-story {
 
-.banner img {
-  width: 100%;
-  height: 210px;
-  object-fit: cover;
+  background-image: linear-gradient( 180deg,  #603813, #85573b );
+  color: #ffffff;
+  text-align: center;
+  padding: 50px 20px;
+  font-size: 1.2em;
 }
-
-.banner-text {
-  position: absolute;
-  top: 80%; /* Position text in the middle vertically */
-  left: 50%; /* Position text in the middle horizontally */
-  transform: translate(-50%, -50%); /* Centre the text */
-  color: rgb(9, 9, 9);
-  font-size: 70px;
-  font-weight: bold;
-  
-}
-  
-  .hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-  }
-  
-  .hero-text h1 {
-    font-size: 3em;
-    margin: 0 0 10px;
-  }
-  
-  .hero-text p {
-    font-size: 1.2em;
-    line-height: 1.6;
-  }
-  
-  .our-story {
-    background-color: white;
-    text-align: center;
-    padding: 50px 20px;
-  }
   
   .our-story h2 {
     font-size: 2.5em;
@@ -120,12 +146,13 @@ nav ul li a:hover {
   }
   
   .our-story img {
+    
     width: 70%;
     border-radius: 10px;
   }
   
   .team {
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     padding: 50px 20px;
     text-align: center;
   }
@@ -139,6 +166,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    
   }
   
   .team-member {
@@ -163,9 +191,39 @@ nav ul li a:hover {
     color: #666;
   }
   
+  .cta {
+    background-color: #ffffff;
+    color: #0a0a0a;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .cta h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .cta p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background-color: #85573b;
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #a87c5f;
+  }
   footer {
-    background-color: #1d85e1;
-    color: white;
+    background-color: #f2ecdf;
+    color: rgb(6, 6, 6);
     text-align: center;
     padding: 10px;
   }
